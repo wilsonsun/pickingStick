@@ -1,0 +1,324 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		C885B4C91DC91ED300EA12B6 /* charater.png in Resources */ = {isa = PBXBuildFile; fileRef = C885B4C81DC91ED300EA12B6 /* charater.png */; };
+		C8BB79DF1DC849F3001EE37C /* ResourcePath.mm in Sources */ = {isa = PBXBuildFile; fileRef = C8BB79DE1DC849F3001EE37C /* ResourcePath.mm */; };
+		C8BB79E21DC849F3001EE37C /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = C8BB79E11DC849F3001EE37C /* main.cpp */; };
+		C8BB79E51DC849F3001EE37C /* cute_image.jpg in Resources */ = {isa = PBXBuildFile; fileRef = C8BB79E41DC849F3001EE37C /* cute_image.jpg */; };
+		C8BB79E71DC849F3001EE37C /* nice_music.ogg in Resources */ = {isa = PBXBuildFile; fileRef = C8BB79E61DC849F3001EE37C /* nice_music.ogg */; };
+		C8BB79E91DC849F3001EE37C /* sansation.ttf in Resources */ = {isa = PBXBuildFile; fileRef = C8BB79E81DC849F3001EE37C /* sansation.ttf */; };
+		C8BB79EB1DC849F3001EE37C /* icon.png in Resources */ = {isa = PBXBuildFile; fileRef = C8BB79EA1DC849F3001EE37C /* icon.png */; };
+		C8BB79F31DC84A1D001EE37C /* SetUp.cpp in Sources */ = {isa = PBXBuildFile; fileRef = C8BB79F11DC84A1D001EE37C /* SetUp.cpp */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		C885B4C81DC91ED300EA12B6 /* charater.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = charater.png; sourceTree = "<group>"; };
+		C8BB79D91DC849F3001EE37C /* PickingStick.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PickingStick.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		C8BB79DD1DC849F3001EE37C /* PickingStick-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "PickingStick-Info.plist"; sourceTree = "<group>"; };
+		C8BB79DE1DC849F3001EE37C /* ResourcePath.mm */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.objcpp; path = ResourcePath.mm; sourceTree = "<group>"; };
+		C8BB79E01DC849F3001EE37C /* ResourcePath.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = ResourcePath.hpp; sourceTree = "<group>"; };
+		C8BB79E11DC849F3001EE37C /* main.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = main.cpp; sourceTree = "<group>"; };
+		C8BB79E41DC849F3001EE37C /* cute_image.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = cute_image.jpg; sourceTree = "<group>"; };
+		C8BB79E61DC849F3001EE37C /* nice_music.ogg */ = {isa = PBXFileReference; lastKnownFileType = file; path = nice_music.ogg; sourceTree = "<group>"; };
+		C8BB79E81DC849F3001EE37C /* sansation.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = sansation.ttf; sourceTree = "<group>"; };
+		C8BB79EA1DC849F3001EE37C /* icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = icon.png; sourceTree = "<group>"; };
+		C8BB79F11DC84A1D001EE37C /* SetUp.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = SetUp.cpp; sourceTree = "<group>"; };
+		C8BB79F21DC84A1D001EE37C /* SetUp.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = SetUp.hpp; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		C8BB79D51DC849F3001EE37C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		C8BB79CF1DC849F3001EE37C = {
+			isa = PBXGroup;
+			children = (
+				C8BB79DB1DC849F3001EE37C /* PickingStick */,
+				C8BB79DA1DC849F3001EE37C /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		C8BB79DA1DC849F3001EE37C /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				C8BB79D91DC849F3001EE37C /* PickingStick.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		C8BB79DB1DC849F3001EE37C /* PickingStick */ = {
+			isa = PBXGroup;
+			children = (
+				C8BB79DE1DC849F3001EE37C /* ResourcePath.mm */,
+				C8BB79E01DC849F3001EE37C /* ResourcePath.hpp */,
+				C8BB79E11DC849F3001EE37C /* main.cpp */,
+				C8BB79E31DC849F3001EE37C /* Resources */,
+				C8BB79DC1DC849F3001EE37C /* Supporting Files */,
+				C8BB79F11DC84A1D001EE37C /* SetUp.cpp */,
+				C8BB79F21DC84A1D001EE37C /* SetUp.hpp */,
+			);
+			path = PickingStick;
+			sourceTree = "<group>";
+		};
+		C8BB79DC1DC849F3001EE37C /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				C8BB79DD1DC849F3001EE37C /* PickingStick-Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		C8BB79E31DC849F3001EE37C /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				C885B4C81DC91ED300EA12B6 /* charater.png */,
+				C8BB79E41DC849F3001EE37C /* cute_image.jpg */,
+				C8BB79E61DC849F3001EE37C /* nice_music.ogg */,
+				C8BB79E81DC849F3001EE37C /* sansation.ttf */,
+				C8BB79EA1DC849F3001EE37C /* icon.png */,
+			);
+			name = Resources;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		C8BB79D81DC849F3001EE37C /* PickingStick */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C8BB79EE1DC849F3001EE37C /* Build configuration list for PBXNativeTarget "PickingStick" */;
+			buildPhases = (
+				C8BB79D41DC849F3001EE37C /* Sources */,
+				C8BB79D51DC849F3001EE37C /* Frameworks */,
+				C8BB79D61DC849F3001EE37C /* Resources */,
+				C8BB79D71DC849F3001EE37C /* ShellScript */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = PickingStick;
+			productName = PickingStick;
+			productReference = C8BB79D91DC849F3001EE37C /* PickingStick.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		C8BB79D01DC849F3001EE37C /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0810;
+				ORGANIZATIONNAME = Wilson;
+				TargetAttributes = {
+					C8BB79D81DC849F3001EE37C = {
+						CreatedOnToolsVersion = 8.1;
+						ProvisioningStyle = Automatic;
+					};
+				};
+			};
+			buildConfigurationList = C8BB79D31DC849F3001EE37C /* Build configuration list for PBXProject "PickingStick" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = C8BB79CF1DC849F3001EE37C;
+			productRefGroup = C8BB79DA1DC849F3001EE37C /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				C8BB79D81DC849F3001EE37C /* PickingStick */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		C8BB79D61DC849F3001EE37C /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C8BB79EB1DC849F3001EE37C /* icon.png in Resources */,
+				C8BB79E91DC849F3001EE37C /* sansation.ttf in Resources */,
+				C8BB79E71DC849F3001EE37C /* nice_music.ogg in Resources */,
+				C885B4C91DC91ED300EA12B6 /* charater.png in Resources */,
+				C8BB79E51DC849F3001EE37C /* cute_image.jpg in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		C8BB79D71DC849F3001EE37C /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "# This shell script simply copies required SFML dylibs/frameworks into the application bundle frameworks folder.\n# If you're using static libraries (which is not recommended) you should remove this script from your project.\n\n# SETTINGS\nCMAKE_INSTALL_FRAMEWORK_PREFIX=\"/Library/Frameworks\"\nCMAKE_INSTALL_LIB_PREFIX=\"/usr/local/lib\"\nFRAMEWORKS_FULL_PATH=\"$BUILT_PRODUCTS_DIR/$FRAMEWORKS_FOLDER_PATH/\"\n\n# Are we building a project that uses frameworks or dylibs?\ncase \"$SFML_BINARY_TYPE\" in\n    DYLIBS)\n        frameworks=\"false\"\n        ;;\n    *)\n        frameworks=\"true\"\n        ;;\nesac\n\n# Echoes to stderr\nerror () # $* message to display\n{\n    echo $* 1>&2\n    exit 2\n}\n\nassert () # $1 is a boolean, $2...N is an error message\n{\n    if [ $# -lt 2 ]\n    then\n        error \"Internal error in assert: not enough args\"\n    fi\n\n    if [ $1 -ne 0 ]\n    then\n        shift\n        error \"$*\"\n    fi\n}\n\nforce_remove () # $@ is some paths\n{\n    test $# -ge 1\n    assert $? \"force_remove() requires at least one parameter\"\n    rm -fr $@\n    assert $? \"couldn't remove $@\"\n}\n\ncopy () # $1 is a source, $2 is a destination\n{\n    test $# -eq 2\n    assert $? \"copy() requires two parameters\"\n    ditto \"$1\" \"$2\"\n    assert $? \"couldn't copy $1 to $2\"\n}\n\nrequire () # $1 is a SFML module like 'system' or 'audio'\n{\n    dest=\"$BUILT_PRODUCTS_DIR/$FRAMEWORKS_FOLDER_PATH/\"\n\n    if [ -z \"$1\" ]\n    then\n        error \"require() requires one parameter!\"\n    else\n        # clean potentially old stuff\n        force_remove \"$dest/libsfml-$1\"*\n        force_remove \"$dest/sfml-$1.framework\"\n\n        # copy SFML libraries\n        if [ \"$frameworks\" = \"true\" ]\n        then\n            source=\"$CMAKE_INSTALL_FRAMEWORK_PREFIX/sfml-$1.framework\"\n            target=\"sfml-$1.framework\"\n        elif [ \"$SFML_LINK_DYLIBS_SUFFIX\" = \"-d\" ]\n        then\n            source=\"$CMAKE_INSTALL_LIB_PREFIX/libsfml-$1-d.dylib\"\n            target=\"`readlink $source`\"\n        else\n            source=\"$CMAKE_INSTALL_LIB_PREFIX/libsfml-$1.dylib\"\n            target=\"`readlink $source`\"\n        fi\n\n        copy \"$source\" \"$dest/$target\"\n\n        # copy extra dependencies\n        if [ \"$1\" = \"audio\" ]\n        then\n            # copy \"FLAC\" \"ogg\" \"vorbis\" \"vorbisenc\" \"vorbisfile\" \"OpenAL\" frameworks too\n            for f in \"FLAC\" \"ogg\" \"vorbis\" \"vorbisenc\" \"vorbisfile\" \"OpenAL\"\n            do\n                copy \"$CMAKE_INSTALL_FRAMEWORK_PREFIX/$f.framework\" \"$dest/$f.framework\"\n            done\n        elif [ \"$1\" = \"graphics\" ]\n        then\n            copy \"$CMAKE_INSTALL_FRAMEWORK_PREFIX/freetype.framework\" \"$dest/freetype.framework\"\n        fi\n    fi\n}\n\nif [ -n \"$SFML_SYSTEM\" ]\nthen\n    require \"system\"\nfi\n\nif [ -n \"$SFML_AUDIO\" ]\nthen\n    require \"audio\"\nfi\n\nif [ -n \"$SFML_NETWORK\" ]\nthen\n    require \"network\"\nfi\n\nif [ -n \"$SFML_WINDOW\" ]\nthen\n    require \"window\"\nfi\n\nif [ -n \"$SFML_GRAPHICS\" ]\nthen\n    require \"graphics\"\nfi\n\n                ";
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		C8BB79D41DC849F3001EE37C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C8BB79E21DC849F3001EE37C /* main.cpp in Sources */,
+				C8BB79DF1DC849F3001EE37C /* ResourcePath.mm in Sources */,
+				C8BB79F31DC84A1D001EE37C /* SetUp.cpp in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		C8BB79EC1DC849F3001EE37C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(NATIVE_ARCH_ACTUAL)";
+				CLANG_CXX_LANGUAGE_STANDARD = "c++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				FRAMEWORK_SEARCH_PATHS = (
+					/Library/Frameworks/,
+					"$(inherited)",
+				);
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				HEADER_SEARCH_PATHS = (
+					/usr/local/include/,
+					"$(inherited)",
+				);
+				LIBRARY_SEARCH_PATHS = (
+					/usr/local/lib/,
+					"$(inherited)",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 10.7;
+				OTHER_LDFLAGS = (
+					"$(inherited)",
+					"$(SFML_SYSTEM)",
+					"$(SFML_WINDOW)",
+					"$(SFML_GRAPHICS)",
+					"$(SFML_AUDIO)",
+					"$(SFML_NETWORK)",
+				);
+				SFML_AUDIO = "$(SFML_LINK_PREFIX) sfml-audio$(SFML_LINK_SUFFIX)";
+				SFML_BINARY_TYPE = FRAMEWORKS;
+				SFML_GRAPHICS = "$(SFML_LINK_PREFIX) sfml-graphics$(SFML_LINK_SUFFIX)";
+				SFML_LINK_DYLIBS_PREFIX = "-l";
+				SFML_LINK_DYLIBS_SUFFIX = "";
+				SFML_LINK_FRAMEWORKS_PREFIX = "-framework";
+				SFML_LINK_FRAMEWORKS_SUFFIX = "";
+				SFML_LINK_PREFIX = "$(SFML_LINK_$(SFML_BINARY_TYPE)_PREFIX)";
+				SFML_LINK_SUFFIX = "$(SFML_LINK_$(SFML_BINARY_TYPE)_SUFFIX)";
+				SFML_NETWORK = "$(SFML_LINK_PREFIX) sfml-network$(SFML_LINK_SUFFIX)";
+				SFML_SYSTEM = "$(SFML_LINK_PREFIX) sfml-system$(SFML_LINK_SUFFIX)";
+				SFML_WINDOW = "$(SFML_LINK_PREFIX) sfml-window$(SFML_LINK_SUFFIX)";
+				SUPPORTED_PLATFORMS = macosx;
+			};
+			name = Debug;
+		};
+		C8BB79ED1DC849F3001EE37C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(NATIVE_ARCH_ACTUAL)";
+				CLANG_CXX_LANGUAGE_STANDARD = "c++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				FRAMEWORK_SEARCH_PATHS = (
+					/Library/Frameworks/,
+					"$(inherited)",
+				);
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				HEADER_SEARCH_PATHS = (
+					/usr/local/include/,
+					"$(inherited)",
+				);
+				LIBRARY_SEARCH_PATHS = (
+					/usr/local/lib/,
+					"$(inherited)",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 10.7;
+				OTHER_LDFLAGS = (
+					"$(inherited)",
+					"$(SFML_SYSTEM)",
+					"$(SFML_WINDOW)",
+					"$(SFML_GRAPHICS)",
+					"$(SFML_AUDIO)",
+					"$(SFML_NETWORK)",
+				);
+				SFML_AUDIO = "$(SFML_LINK_PREFIX) sfml-audio$(SFML_LINK_SUFFIX)";
+				SFML_BINARY_TYPE = FRAMEWORKS;
+				SFML_GRAPHICS = "$(SFML_LINK_PREFIX) sfml-graphics$(SFML_LINK_SUFFIX)";
+				SFML_LINK_DYLIBS_PREFIX = "-l";
+				SFML_LINK_DYLIBS_SUFFIX = "";
+				SFML_LINK_FRAMEWORKS_PREFIX = "-framework";
+				SFML_LINK_FRAMEWORKS_SUFFIX = "";
+				SFML_LINK_PREFIX = "$(SFML_LINK_$(SFML_BINARY_TYPE)_PREFIX)";
+				SFML_LINK_SUFFIX = "$(SFML_LINK_$(SFML_BINARY_TYPE)_SUFFIX)";
+				SFML_NETWORK = "$(SFML_LINK_PREFIX) sfml-network$(SFML_LINK_SUFFIX)";
+				SFML_SYSTEM = "$(SFML_LINK_PREFIX) sfml-system$(SFML_LINK_SUFFIX)";
+				SFML_WINDOW = "$(SFML_LINK_PREFIX) sfml-window$(SFML_LINK_SUFFIX)";
+				SUPPORTED_PLATFORMS = macosx;
+			};
+			name = Release;
+		};
+		C8BB79EF1DC849F3001EE37C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = "PickingStick/PickingStick-Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "@loader_path/../Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		C8BB79F01DC849F3001EE37C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = "PickingStick/PickingStick-Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "@loader_path/../Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		C8BB79D31DC849F3001EE37C /* Build configuration list for PBXProject "PickingStick" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C8BB79EC1DC849F3001EE37C /* Debug */,
+				C8BB79ED1DC849F3001EE37C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C8BB79EE1DC849F3001EE37C /* Build configuration list for PBXNativeTarget "PickingStick" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C8BB79EF1DC849F3001EE37C /* Debug */,
+				C8BB79F01DC849F3001EE37C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = C8BB79D01DC849F3001EE37C /* Project object */;
+}
