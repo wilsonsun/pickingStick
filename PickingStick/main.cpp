@@ -38,6 +38,12 @@ int main(int, char const**)
     window.setIcon(icon.getSize().x, icon.getSize().y, icon.getPixelsPtr());
      */
     
+    float frameCounter = 0;
+    float switchFrame = 100;
+    float frameSpeed = 500;
+    float adjustedSpeed = 5.0;
+    sf::Clock clock;
+    
     sf::Texture playerTexture;
     enum state {Down, Left, Right, Up};
     sf::Vector2i source;
@@ -107,29 +113,36 @@ int main(int, char const**)
             
             if (sf::Keyboard::isKeyPressed(sf::Keyboard::Up)) {
                 source.y = Up;
-                playerSprite.move(0, -1);
+                playerSprite.move(0, -1*adjustedSpeed);
             }
             else if (sf::Keyboard::isKeyPressed(sf::Keyboard::Down)) {
-                playerSprite.move(0, 1);
+                playerSprite.move(0, 1*adjustedSpeed);
                 source.y = Down;
             }
             else if (sf::Keyboard::isKeyPressed(sf::Keyboard::Right)) {
-                playerSprite.move(1, 0);
+                playerSprite.move(1*adjustedSpeed, 0);
                 source.y = Right;
             }
             else if (sf::Keyboard::isKeyPressed(sf::Keyboard::Left)) {
-                playerSprite.move(-1, 0);
+                playerSprite.move(-1*adjustedSpeed, 0);
                 source.y = Left;
             }
              
         }
 
 
-
+        frameCounter += frameSpeed*clock.restart().asSeconds();
+        //std:: cout << "---------------------" << std::endl;
+        //std::cout << "frameCounter: " << frameCounter << std::endl;
+        //std::cout << "switchFrame: " << switchFrame << std::endl;
+        if (frameCounter >= switchFrame) {
+            frameCounter = 0;
         // Animation
-        if (source.x >= 2)
-            source.x = 0;
-        source.x++;
+            if (source.x >= 2)
+                source.x = -1;
+             source.x++;
+        
+        }
         
         playerSprite.setTextureRect(sf::IntRect(source.x*PLAYER_WIDTH, source.y*PLAYER_HEIGHT,PLAYER_WIDTH,PLAYER_HEIGHT));
 
