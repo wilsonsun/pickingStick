@@ -41,12 +41,14 @@ int main(int, char const**)
     float frameCounter = 0;
     float switchFrame = 100;
     float frameSpeed = 500;
-    float adjustedSpeed = 5.0;
+    float adjustedSpeed = 10.0;
+    bool isMoving = false;
     sf::Clock clock;
     
     sf::Texture playerTexture;
     enum state {Down, Left, Right, Up};
     sf::Vector2i source;
+    source.x = 1;
 
     // Load a sprite to display
     if (!playerTexture.loadFromFile(resourcePath() + "charater.png")) {
@@ -111,21 +113,27 @@ int main(int, char const**)
                  
             }
             
+            isMoving = false;
+            
             if (sf::Keyboard::isKeyPressed(sf::Keyboard::Up)) {
                 source.y = Up;
                 playerSprite.move(0, -1*adjustedSpeed);
+                isMoving = true;
             }
             else if (sf::Keyboard::isKeyPressed(sf::Keyboard::Down)) {
                 playerSprite.move(0, 1*adjustedSpeed);
                 source.y = Down;
+                isMoving = true;
             }
             else if (sf::Keyboard::isKeyPressed(sf::Keyboard::Right)) {
                 playerSprite.move(1*adjustedSpeed, 0);
                 source.y = Right;
+                isMoving = true;
             }
             else if (sf::Keyboard::isKeyPressed(sf::Keyboard::Left)) {
                 playerSprite.move(-1*adjustedSpeed, 0);
                 source.y = Left;
+                isMoving = true;
             }
              
         }
@@ -138,9 +146,13 @@ int main(int, char const**)
         if (frameCounter >= switchFrame) {
             frameCounter = 0;
         // Animation
-            if (source.x >= 2)
-                source.x = -1;
-             source.x++;
+            if (isMoving) {
+                if (source.x >= 2)
+                    source.x = -1;
+                source.x++;
+            } else {
+                source.x = 1;
+            }
         
         }
         
