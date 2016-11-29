@@ -8,8 +8,17 @@
 
 #include "SetUp.hpp"
 #include <iostream>
-using namespace std;
+#include <SFML/Audio.hpp>
+#include <SFML/Graphics.hpp>
+#include "ResourcePath.hpp"
 
-void loadBackGround() {
-    cout << "Loading Background..." << endl;
+sf::Sprite loadBackGround() {
+    sf::Texture backGroundTexture;
+    
+    if (!backGroundTexture.loadFromFile(resourcePath() + "background.jpg")) {
+        std::cout << "Could NOT load background image" << std::endl;
+    }
+    sf::Sprite backGroundSprite(backGroundTexture);
+    
+    return backGroundSprite;
 }

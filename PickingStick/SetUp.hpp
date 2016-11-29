@@ -10,6 +10,8 @@
 #define SetUp_hpp
 
 #include <stdio.h>
+#include <SFML/Audio.hpp>
+#include <SFML/Graphics.hpp>
 
-void loadBackGround();
+sf::Sprite loadBackGround();
 #endif /* SetUp_hpp */

@@ -24,10 +24,32 @@
 const float PLAYER_WIDTH = 32.0f;
 const float PLAYER_HEIGHT = 32.0f;
 
+void isCollided (sf::Sprite &player, sf::Sprite &ball, int &points, sf::Text &text, sf::Font &font) {
+    
+    sf::FloatRect playerRect = player.getGlobalBounds();
+    sf::FloatRect ballRect = ball.getGlobalBounds();
+    
+    if (playerRect.intersects(ballRect)) {
+        ++points;
+        std::string stringPoints = "Points:";
+        std::string displayText = stringPoints+=std::to_string(points);
+        text.setString(displayText);
+        float rx = static_cast <float> (rand()) / (static_cast <float> (RAND_MAX/1400));
+        float ry = static_cast <float> (rand()) / (static_cast <float> (RAND_MAX/1100));
+        
+        ball.setPosition(rx, ry);
+    }
+    
+    return;
+    
+}
+
+
 int main(int, char const**)
 {
     // Create the main window
     sf::RenderWindow window(sf::VideoMode(1500, 1200), "SFML window");
+    window.setFramerateLimit(60);
     //window.setKeyRepeatEnabled(false);
     // Set the Icon
     /*
@@ -38,18 +60,43 @@ int main(int, char const**)
     window.setIcon(icon.getSize().x, icon.getSize().y, icon.getPixelsPtr());
      */
     
+    int points = 0;
+    std::string stringPoints = "Points:";
     float frameCounter = 0;
     float switchFrame = 100;
     float frameSpeed = 500;
-    float adjustedSpeed = 10.0;
+    float adjustedSpeed = 15.0;
     bool isMoving = false;
     sf::Clock clock;
     
     sf::Texture playerTexture;
+    sf::Sprite backGround;
     enum state {Down, Left, Right, Up};
     sf::Vector2i source;
     source.x = 1;
-
+    
+    
+    // Loading background image
+    sf::Texture backGroundTexture;
+    
+    if (!backGroundTexture.loadFromFile(resourcePath() + "background.jpg")) {
+        std::cout << "Could NOT load background image" << std::endl;
+    }
+    sf::Sprite backGroundSprite(backGroundTexture);
+    backGroundSprite.scale(2.0f, 2.0f);
+    
+    // Load a ball
+    sf::Texture ballTexture;
+    if (!ballTexture.loadFromFile(resourcePath() + "ball.png")) {
+        std::cout << "Could NOT load ball image" << std::endl;
+    }
+    sf::Sprite ballSprite(ballTexture);
+    ballSprite.setScale(0.1f, 0.1f);
+    float rx = static_cast <float> (rand()) / (static_cast <float> (RAND_MAX/1400));
+    float ry = static_cast <float> (rand()) / (static_cast <float> (RAND_MAX/1100));
+    ballSprite.setPosition(rx, ry);
+    
+    
     // Load a sprite to display
     if (!playerTexture.loadFromFile(resourcePath() + "charater.png")) {
         std::cout << "Could NOT load player image" << std::endl;
@@ -58,14 +105,17 @@ int main(int, char const**)
     
     sf::Sprite playerSprite(playerTexture);
     playerSprite.setPosition(100.0f, 100.0f);
-    playerSprite.scale(3.0f, 3.0f);
+    playerSprite.scale(4.0f, 4.0f);
     
     // Create a graphical text to display
     sf::Font font;
     if (!font.loadFromFile(resourcePath() + "sansation.ttf")) {
         return EXIT_FAILURE;
     }
-    sf::Text text("Hello SFML", font, 50);
+    
+    
+    std::string displayText = stringPoints+=(points+'0');
+    sf::Text text(displayText, font, 50);
     text.setFillColor(sf::Color::Black);
 
     // Load a music to play
@@ -138,6 +188,7 @@ int main(int, char const**)
              
         }
 
+        isCollided(playerSprite, ballSprite, points, text, font);
 
         frameCounter += frameSpeed*clock.restart().asSeconds();
         //std:: cout << "---------------------" << std::endl;
@@ -159,12 +210,16 @@ int main(int, char const**)
         playerSprite.setTextureRect(sf::IntRect(source.x*PLAYER_WIDTH, source.y*PLAYER_HEIGHT,PLAYER_WIDTH,PLAYER_HEIGHT));
 
         
+        window.draw(backGroundSprite);
+        // Draw the ball
+        window.draw(ballSprite);
         // Draw the sprite
         window.draw(playerSprite);
 
-        // Draw the string
-        //window.draw(text);
-
+        window.draw(text);
+        
+        
+        
         // Update the window
         window.display();
         // Clear screen

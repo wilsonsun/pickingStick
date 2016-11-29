@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		C8558E591DECE48F0092B39C /* background.jpg in Resources */ = {isa = PBXBuildFile; fileRef = C8558E581DECE48F0092B39C /* background.jpg */; };
+		C8558E5B1DED05DB0092B39C /* ball.png in Resources */ = {isa = PBXBuildFile; fileRef = C8558E5A1DED05DB0092B39C /* ball.png */; };
 		C885B4C91DC91ED300EA12B6 /* charater.png in Resources */ = {isa = PBXBuildFile; fileRef = C885B4C81DC91ED300EA12B6 /* charater.png */; };
 		C8BB79DF1DC849F3001EE37C /* ResourcePath.mm in Sources */ = {isa = PBXBuildFile; fileRef = C8BB79DE1DC849F3001EE37C /* ResourcePath.mm */; };
 		C8BB79E21DC849F3001EE37C /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = C8BB79E11DC849F3001EE37C /* main.cpp */; };
@@ -18,6 +20,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		C8558E581DECE48F0092B39C /* background.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = background.jpg; sourceTree = "<group>"; };
+		C8558E5A1DED05DB0092B39C /* ball.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = ball.png; sourceTree = "<group>"; };
 		C885B4C81DC91ED300EA12B6 /* charater.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = charater.png; sourceTree = "<group>"; };
 		C8BB79D91DC849F3001EE37C /* PickingStick.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PickingStick.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C8BB79DD1DC849F3001EE37C /* PickingStick-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "PickingStick-Info.plist"; sourceTree = "<group>"; };
@@ -84,7 +88,9 @@
 		C8BB79E31DC849F3001EE37C /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				C8558E5A1DED05DB0092B39C /* ball.png */,
 				C885B4C81DC91ED300EA12B6 /* charater.png */,
+				C8558E581DECE48F0092B39C /* background.jpg */,
 				C8BB79E41DC849F3001EE37C /* cute_image.jpg */,
 				C8BB79E61DC849F3001EE37C /* nice_music.ogg */,
 				C8BB79E81DC849F3001EE37C /* sansation.ttf */,
@@ -154,8 +160,10 @@
 				C8BB79EB1DC849F3001EE37C /* icon.png in Resources */,
 				C8BB79E91DC849F3001EE37C /* sansation.ttf in Resources */,
 				C8BB79E71DC849F3001EE37C /* nice_music.ogg in Resources */,
+				C8558E591DECE48F0092B39C /* background.jpg in Resources */,
 				C885B4C91DC91ED300EA12B6 /* charater.png in Resources */,
 				C8BB79E51DC849F3001EE37C /* cute_image.jpg in Resources */,
+				C8558E5B1DED05DB0092B39C /* ball.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
